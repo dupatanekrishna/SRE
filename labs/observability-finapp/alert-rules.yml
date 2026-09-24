@@ -1,0 +1,15 @@
+groups:
+  - name: finapp-alerts
+    rules:
+      - alert: FinAppHighDBLatency
+        expr: |
+          sum(rate(http_server_duration_milliseconds_sum{http_target="/db"}[1m]))
+          /
+          sum(rate(http_server_duration_milliseconds_count{http_target="/db"}[1m]))
+          > 1000
+        for: 30s
+        labels:
+          severity: warning
+        annotations:
+          summary: "FinApp /db latency is high"
+          description: "Average /db latency has exceeded 1000 ms."
