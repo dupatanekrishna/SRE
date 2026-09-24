@@ -61,3 +61,14 @@ This repository intentionally excludes real credentials, Slack webhooks, AWS acc
 - [Terraform Reliability](terraform/README.md)
 - [Kubernetes / EKS SRE](kubernetes-sre/README.md)
 - [Interview Questions](interview-questions/lead-sre-questions.md)
+
+
+## Reproducible Hands-On Lab
+
+The full Docker-based observability experiment is available here:
+
+- [FinApp Observability Experimental Lab](labs/observability-finapp/README.md)
+
+It includes the Flask backend, PostgreSQL, OpenTelemetry Collector, Prometheus, Grafana, Loki, Tempo, Node Exporter, Alertmanager, Slack template, Docker Compose deployment, manual Docker setup, PromQL/LogQL queries, traffic generator, and PostgreSQL investigation commands.
+
+This lab is intentionally structured so the complete experiment can be repeated from scratch and used as evidence of hands-on understanding.
