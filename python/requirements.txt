@@ -1,0 +1,8 @@
+# Common third-party dependencies used in DevOps/SRE Python automation.
+# Standard library modules such as os, sys, json, csv, re, subprocess,
+# datetime, pathlib, and logging do NOT belong here.
+
+boto3
+requests
+PyYAML
+kubernetes
