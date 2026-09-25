@@ -2,7 +2,20 @@
 
 set -euo pipefail
 
-docker compose exec postgres   psql   -U "${POSTGRES_USER}"   -d "${POSTGRES_DB}"   -c "
+if [ -f .env ]; then
+  set -a
+  . ./.env
+  set +a
+fi
+
+POSTGRES_USER="${POSTGRES_USER:-sreadmin}"
+POSTGRES_DB="${POSTGRES_DB:-production}"
+
+docker compose exec postgres \
+  psql \
+  -U "${POSTGRES_USER}" \
+  -d "${POSTGRES_DB}" \
+  -c "
 SELECT
   pid,
   state,
