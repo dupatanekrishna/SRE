@@ -95,3 +95,12 @@ Import brings an existing resource into Terraform state; it does not automatical
 - `prevent_destroy` where appropriate
 
 `prevent_destroy` protects Terraform-driven destruction, not manual deletion outside Terraform.
+
+
+## Reproducible No-AWS Hands-On Lab
+
+A safe local experiment is included here:
+
+- [Terraform Local Drift & State Lab](local-drift-state-lab/README.md)
+
+It uses only the HashiCorp `local` provider, so it can be used to practice `init`, `validate`, `plan`, `apply`, state inspection, manual drift, `-detailed-exitcode`, reconciliation and destroy without provisioning anything in AWS.
