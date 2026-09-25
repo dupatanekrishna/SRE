@@ -96,6 +96,31 @@ Import brings an existing resource into Terraform state; it does not automatical
 
 `prevent_destroy` protects Terraform-driven destruction, not manual deletion outside Terraform.
 
+## Terragrunt — Organized Terraform Management
+
+Terragrunt is a thin wrapper around Terraform/OpenTofu that helps keep infrastructure code DRY, organized, and easier to manage across multiple environments.
+
+Simple mental model:
+
+```text
+Terraform
+= builds infrastructure
+
+Terragrunt
+= organizes and reuses Terraform configuration
+```
+
+A simple example is included here:
+
+- [Terragrunt Simple Example](terragrunt-example/README.md)
+
+It demonstrates:
+
+- shared root configuration
+- reusable Terraform module source
+- environment-specific inputs
+- VPC → application dependency flow
+- interview-ready Terraform vs Terragrunt explanation
 
 ## Reproducible No-AWS Hands-On Lab
 
