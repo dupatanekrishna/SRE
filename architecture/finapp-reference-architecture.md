@@ -1,4 +1,4 @@
-# FinApp Reference Architecture — Interview Revision
+# FinApp Reference Architecture — Operational Reference
 
 ## Main request flow
 
