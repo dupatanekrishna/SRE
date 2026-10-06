@@ -1,4 +1,4 @@
-# SRE Core Concepts — Fast Revision
+# SRE Core Concepts — Operational Reference
 
 ## Golden Signals
 
