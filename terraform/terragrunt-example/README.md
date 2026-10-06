@@ -300,9 +300,9 @@ Terragrunt prepares the Terraform configuration and invokes Terraform/OpenTofu u
 
 ---
 
-# Interview Answer
+# Engineering Explanation
 
-A concise answer:
+A concise explanation:
 
 > Terragrunt is a thin wrapper around Terraform that helps keep infrastructure code DRY and organized. I use Terraform modules for the actual infrastructure and Terragrunt to reuse those modules across environments such as dev, stage, and production. It also helps centralize common configuration, manage environment-specific inputs, remote state patterns, and dependencies between infrastructure stacks.
 
@@ -328,4 +328,4 @@ dependency management
 more organized infrastructure management
 ```
 
-That is the main concept to remember for interviews.
+That is the main engineering concept to retain.
