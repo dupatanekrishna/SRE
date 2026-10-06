@@ -276,7 +276,7 @@ It demonstrates:
 - reusable Terraform module source
 - environment-specific inputs
 - VPC → application dependency flow
-- interview-ready Terraform vs Terragrunt explanation
+- clear Terraform vs Terragrunt engineering explanation
 
 ## What If an External Terraform Module Becomes Unmaintained?
 
@@ -425,7 +425,7 @@ migrate to maintained module
 carefully protect state/resource addresses
 ```
 
-### Interview Answer
+### Engineering Explanation
 
 > If an external Terraform module becomes unmaintained, I first pin the last known-good version so deployments remain stable. Then I assess the maintenance risk. For small compatibility fixes, I fork it into our organization, test the changes, and version our fork. If the module is significantly outdated, I migrate to a maintained or internal module. During migration I pay close attention to Terraform state and resource addresses so Terraform does not accidentally destroy and recreate existing infrastructure.
 
