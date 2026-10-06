@@ -1,4 +1,6 @@
-# Lead SRE Interview Questions
+# Lead SRE Knowledge Check
+
+After completing the SRE labs in this repository, you should be able to reason through and explain the following scenarios without relying on memorized answers.
 
 ## Terraform
 
