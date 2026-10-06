@@ -89,7 +89,7 @@ EKS Pod
 RDS
 ```
 
-Important interview point: rotating a secret in Secrets Manager does not guarantee every running process immediately uses the new value. Applications may cache credentials, read them only at startup, or consume mounted files that must be reread.
+Important operational point: rotating a secret in Secrets Manager does not guarantee every running process immediately uses the new value. Applications may cache credentials, read them only at startup, or consume mounted files that must be reread.
 
 ## Do not store secrets in
 
