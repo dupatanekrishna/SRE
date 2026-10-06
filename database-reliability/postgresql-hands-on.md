@@ -72,6 +72,6 @@ wait_event      = PgSleep
 
 Correlated with application latency metrics and trace spans.
 
-## Interview summary
+## Operational approach
 
 > I do not start by killing sessions. I first identify whether the session is blocked or blocking, inspect wait events and the transaction state, assess impact, and choose the least disruptive mitigation. After mitigation I verify both database behavior and application recovery.
