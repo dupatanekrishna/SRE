@@ -388,7 +388,7 @@ Never blindly run `terraform apply` after losing state.
 
 ---
 
-# Interview summary
+# Hands-on outcome
 
-> I created a local Terraform lab using the local provider so I could safely experiment with state and drift without creating cloud resources. I applied a local file, inspected it through `terraform state list` and `terraform state show`, changed the file manually to create out-of-band drift, and used `terraform plan -detailed-exitcode` to detect it. I then reconciled the resource through Terraform. The experiment helped reinforce that the target state is configuration = state = actual infrastructure.
+> I created a local Terraform lab using the local provider so I could safely experiment with state and drift without creating cloud resources. I applied a local file, inspected it through `terraform state list` and `terraform state show`, changed the file manually to create out-of-band drift, and used `terraform plan -detailed-exitcode` to detect it. I then reconciled the resource through Terraform. The experiment reinforced that the target state is configuration = state = actual infrastructure.
 
