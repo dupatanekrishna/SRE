@@ -1,6 +1,6 @@
-# Python for DevOps / SRE — Interview Revision Guide
+# Python for DevOps / SRE — Engineering Review Guide
 
-This folder is a practical Python revision guide for DevOps/SRE interviews and day-to-day automation.
+This folder is a practical Python engineering review and automation guide for DevOps/SRE work and day-to-day automation.
 
 The goal is **not** to learn every advanced Python feature. The goal is to become comfortable reading and writing automation scripts for AWS, Kubernetes, Linux, APIs, files, JSON/CSV, CI/CD, and operational tooling.
 
@@ -51,7 +51,7 @@ Core topics:
 39. Virtual environments
 40. `pip`
 
-Advanced topics such as metaclasses, complex OOP, descriptors, deep async programming, and advanced decorators are not priorities for a DevOps interview unless the role specifically requires Python development.
+Advanced topics such as metaclasses, complex OOP, descriptors, deep async programming, and advanced decorators are not priorities for most DevOps/SRE automation roles unless the role specifically requires Python development.
 
 ---
 
@@ -1729,7 +1729,7 @@ python devops_examples.py
 
 ---
 
-# 52. Interview Quick Answers
+# 52. Quick Engineering Review
 
 ### What is a list?
 
@@ -1848,7 +1848,7 @@ It is the AWS SDK for Python and allows programmatic interaction with AWS servic
 
 # 53. Final DevOps Python Mental Model
 
-If you can confidently understand code like this, your Python base is strong enough for many DevOps/SRE interviews:
+If you can confidently understand code like this, your Python base is strong enough for many DevOps/SRE automation tasks:
 
 ```python
 import os
@@ -1909,14 +1909,25 @@ That single example combines:
 
 ---
 
+## What You Should Be Able to Explain After Completing This Lab
+
+- Core Python data types and when to use lists, tuples, dictionaries, and sets.
+- How loops, conditions, functions, exceptions, and modules fit together in automation scripts.
+- How to read and write JSON, CSV, files, and environment variables safely.
+- When to use `subprocess`, `requests`, `boto3`, and the Kubernetes Python client.
+- Why virtual environments and `requirements.txt` matter for reproducible automation.
+- How to structure a small DevOps/SRE automation project cleanly.
+
+---
+
 ## Files in this folder
 
-- `README.md` — complete revision guide
+- `README.md` — complete engineering review guide
 - `basics.py` — variables, strings, lists, tuples, dicts, sets, slicing
 - `loops.py` — loops, range, enumerate, break, continue, comprehensions
 - `functions_modules.py` — functions, main pattern, modules, imports
 - `devops_examples.py` — practical examples
-- `interview_questions.md` — rapid interview revision
+- `knowledge-check.md` — concise knowledge check
 - `requirements.txt` — common third-party dependencies
 
-Use these files for hands-on revision before interviews.
+Use these files for hands-on engineering review and practice.
