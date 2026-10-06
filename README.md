@@ -13,7 +13,7 @@ This repository documents practical Site Reliability Engineering work across obs
 - Kubernetes/EKS troubleshooting patterns
 - IAM/IRSA troubleshooting
 - Certificate and secret rotation
-- Lead SRE interview questions
+- Scenario-based SRE knowledge checks
 
 ## Observability architecture
 
@@ -60,8 +60,8 @@ This repository intentionally excludes real credentials, Slack webhooks, AWS acc
 - [Certificate & Secret Rotation](database-reliability/certificate-secret-rotation.md)
 - [Terraform Reliability](terraform/README.md)
 - [Kubernetes / EKS SRE](kubernetes-sre/README.md)
-- [Interview Questions](interview-questions/lead-sre-questions.md)
-
+- [Engineering Review Guide](ENGINEERING_REVIEW_GUIDE.md)
+- [SRE Knowledge Check](knowledge-check/lead-sre-knowledge-check.md)
 
 ## Reproducible Hands-On Lab
 
@@ -72,3 +72,18 @@ The full Docker-based observability experiment is available here:
 It includes the Flask backend, PostgreSQL, OpenTelemetry Collector, Prometheus, Grafana, Loki, Tempo, Node Exporter, Alertmanager, Slack template, Docker Compose deployment, manual Docker setup, PromQL/LogQL queries, traffic generator, and PostgreSQL investigation commands.
 
 This lab is intentionally structured so the complete experiment can be repeated from scratch and used as evidence of hands-on understanding.
+
+## What You Should Be Able to Explain After Completing This Lab
+
+You should be able to:
+
+- Explain how an SRE incident moves from detection through mitigation, validation, and RCA.
+- Trace a user request through DNS, load balancing, Kubernetes networking, application code, and downstream dependencies.
+- Troubleshoot Kubernetes workload failures, service discovery, Pod-to-RDS connectivity, and IAM access problems.
+- Explain RTO/RPO, HA/DR choices, backup validation, and recovery testing.
+- Detect and reconcile Terraform drift and reason safely about state recovery and imports.
+- Correlate metrics, logs, traces, and PostgreSQL evidence during latency incidents.
+- Explain Prometheus alerting, Alertmanager routing, golden signals, SLI/SLO/SLA, and error budgets.
+- Describe safe secret and certificate rotation strategies for production workloads.
+
+Use the [Knowledge Check](knowledge-check/lead-sre-knowledge-check.md) to validate that understanding with scenario-based questions.
